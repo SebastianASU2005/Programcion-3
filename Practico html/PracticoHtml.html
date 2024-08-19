@@ -1,0 +1,142 @@
+<<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documento de Ejemplo</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            caption {
+                font-weight: bold;
+                margin: 10px 0;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Documentación HTML</h1>
+        </header>
+        
+        <main>
+            <section id="ejercicio1">
+                <h2>4.1 Estructura Básica del Documento HTML</h2>
+                <p>Este documento HTML tiene una estructura básica que incluye la declaración del DOCTYPE, etiquetas de metadatos y un título.</p>
+            </section>
+    
+            <section id="ejercicio2">
+                <h2>4.2 Encabezados y Propiedades de Texto</h2>
+                <h3><b>Texto h2</b></h3>
+                <h4><em>Texto h3</em></h4>
+                <h5><u>Texto h4</u></h5>
+                <h6>Texto h5</h6>
+            </section>
+    
+            <section id="ejercicio3">
+                <h2>4.3 Divisiones y Agrupaciones de Contenido</h2>
+                <div>
+                    <h3><b>Sección 1</b></h3>
+                    <p>Contenido de la primera agrupación del div</p>
+                </div>
+                <div>
+                    <h3><b>Sección 2</b></h3>
+                    <p>Contenido de la segunda agrupación del div</p>
+                </div>
+            </section>
+    
+            <section id="ejercicio4">
+                <h2>4.4 Enlaces y Listas</h2>
+                <p>Visita el <a href="https://openart.ai/workflows/home?gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxp-04MsRkF-rt3Wamcy6o4jjzeqheL9PK7OB7vcXKQZNlCBWiBh_V0aArV1EALw_wcB">ComfyUI</a> aquí.</p>
+                <h3>Enlaces Internos</h3>
+                <ul>
+                    <li><a href="#ejercicio1">Ejercicio 1</a></li>
+                    <li><a href="#ejercicio2">Ejercicio 2</a></li>
+                    <li><a href="#ejercicio3">Ejercicio 3</a></li>
+                </ul>
+                <h3>Listas</h3>
+                <h4>Lista Desordenada</h4>
+                <ul>
+                    <li>Primer ítem de una lista desordenada</li>
+                    <li>Segundo ítem de una lista desordenada</li>
+                </ul>
+                <h4>Lista Ordenada</h4>
+                <ol>
+                    <li>Primer ítem de una lista ordenada</li>
+                    <li>Segundo ítem de una lista ordenada</li>
+                </ol>
+            </section>
+    
+            <section id="ejercicio5">
+                <h2>4.5 Elementos Multimedia</h2>
+                <h3>Imagen</h3>
+                <img src="https://cdn.openart.ai/workflow_thumbnails/Qh08EFnyT3qq4M5lHAX7/image_lYsFb2oV_1723556413312_raw.jpg" alt="Ejemplo de un proyecto hecho en ComfyUI" width="300" height="200">
+    
+                <h3>Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LNOlk8oz1nY?list=PLH1tkjphTlWUTApzX-Hmw_WykUpG13eza&loop=1" frameborder="0" allowfullscreen></iframe>
+    
+                <h3>Audio</h3>
+                <audio src="Html/bocina.mp3" controls autoplay loop muted></audio>
+            </section>
+    
+            <section id="ejercicio6">
+                <h2>4.6 Tablas</h2>
+                <table>
+                    <caption>Información de Empleados</caption>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Cargo</th>
+                            <th>Departamento</th>
+                            <th>Fecha de Contratación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan Pérez</td>
+                            <td>Desarrollador</td>
+                            <td>TI</td>
+                            <td>01/03/2022</td>
+                        </tr>
+                        <tr>
+                            <td>María López</td>
+                            <td>Diseñadora</td>
+                            <td>Marketing</td>
+                            <td>15/06/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <section id="ejercicio7">
+                <h2>Formularios</h2>
+                <h3>Formulario de Contacto</h3>
+                <form action="/enviar-formulario" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+    
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+    
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 UTN Sebastian Astudillo</p>
+        </footer>
+    </body>
+    </html>
