@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.separar{
+    Border-bottom: 1px solid
+}
+.Titulo {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    padding-left: 15px;
+    font-style: italic;
+    background-color: #080808;
+}
+.Cabecera {
+    font-size: 18px;
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.Titulo2{
+    font-size: 16px;
+    text-align: left;
+    text-transform: lowercase;
+    text-decoration: underline;
+}
+
+
+.Cabecera2{
+    font-size: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #333;
+    border-left: 5px solid #888;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    background-color: #f4f4f4;
+}
+.caja {
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.caja.destacada {
+    border: 5px solid #000000;
+    background-color: #cca872d0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+.relativo {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 50px;
+    border: 2px solid #000;
+    text-align: left;
+}
+
+/* Estilo para la caja absoluta */
+.absoluto {
+    position: absolute;
+    top: 30px; 
+    left: 400px; 
+    background-color: #ffcccb;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    color: #ff0000;
+    font-weight: bold;
+}
+body {
+    background-color: #ffffff; /* Color de fondo por defecto */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño de fuente por defecto para el encabezado */
+}
+
+section {
+    width: 80%; /* Ancho por defecto de la sección */
+    padding: 20px; /* Padding por defecto de la sección */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+}
+
+/* Estilos para el div con clase animacion */
+.animacion {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.966);
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: rgb(0, 17, 255); /* Cambia de color al hacer hover */
+}
+
+/* Estilos para el div con clase mover */
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation: mover 2s linear infinite;
+    border-radius: 50%; 
+}
+
+/* Definición de la animación @keyframes */
+@keyframes mover {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100px;
+    }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px; /* Espacio entre los elementos */
+    padding: 10px; /* Padding alrededor del contenedor */
+}
+
+/* Estilo para los elementos de la cuadrícula */
+.grid-item {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Centra el texto dentro del elemento */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Media Query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+    body {
+        background-color: #f0f0f0; /* Color de fondo para pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 1.5em; /* Tamaño de fuente reducido para pantallas pequeñas */
+    }
+    
+    section {
+        width: 90%; /* Ancho reducido de la sección en pantallas pequeñas */
+        padding: 10px; /* Padding reducido en pantallas pequeñas */
+    }
+}
